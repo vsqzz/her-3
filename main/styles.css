@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set the body height to the height of the viewport */
+    background-color: #EEC5B3; /* Fallback color if the image isn't fully visible */
+    background-image: url('urs.jpg'); /* Specify the path to your image */
+    background-size: 480px; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    position: relative; /* Set position to relative to position the buttons */
+}
+
+.message-container {
+    position: absolute; /* Position the text container relative to the body */
+    top: 18%; /* Adjust the percentage to move the text higher or lower */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #595959
+}
+
+.message {
+    font-family: monospace;
+    font-size: 35px;
+    color: #333;
+}
+
+.button-container {
+    position: relative; /* Set position to relative */
+}
+
+.button {
+    display: inline-block;
+    padding: 25px 45px;
+    margin: 10px;
+    border: 0px;
+    background-color: #fcd5ce; /* Bright pink */
+    color: #FAF8F6; /* Bright red */
+    font-size: 19px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px; /* Make corners round */
+    position: absolute; /* Position the buttons relative to the button-container */
+}
+
+.button.yes {
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+}
+
+.button.no {
+    bottom: 20px; /* Adjust the bottom position as needed */
+    right: 20px; /* Adjust the right position as needed */
+}
